@@ -465,7 +465,7 @@ main section {
 }
 
 .main-btn {
-    background-color: transparent;
+    background-color: #28a8db;
     color: #28a8db;
     font-family: "Gardens";
     font-size: 1.3em;
@@ -474,7 +474,7 @@ main section {
 }
 
 .main-btn:hover {
-    background-color: #28a8db;
+    background-color: transparent;
     color: #fff;
 }
 /* footer */
