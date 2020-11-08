@@ -32,6 +32,15 @@ body {
     letter-spacing: 0.12em;
 }
 
+#uptotop {
+  position: fixed;
+  right: 50px;
+  bottom: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+
 /* header */
 header {
     padding: 65px 0;
