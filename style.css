@@ -1,0 +1,507 @@
+/* Add new font */
+@font-face {
+    font-family: Gardens;
+    src: url(fonts/20011.ttf);
+}
+/* Reboot standart style */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
+a, button, input, .overlay {
+    transition: all 0.5s ease;
+    outline: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+/* Styles */
+body {
+    background: #fff;
+    font-family: 'Museo Sans 300', sans-serif;
+    font-size: 15px;
+    color: #22241b;
+    letter-spacing: 0.12em;
+}
+
+/* header */
+header {
+    padding: 65px 0;
+    background: #fff url(./img/galery/gllomy_florests.jpg) no-repeat 50% / cover;
+    opacity: .85;
+}
+
+header a.logo {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 100;
+    line-height: 1.2em;
+}
+
+header a.logo span {
+    font-weight: 800;
+}
+
+header nav,
+header nav .menu {
+    display: flex;
+    text-transform: uppercase;
+}
+
+header nav {
+    justify-content: space-between;
+}
+
+.menu {
+    width: 45%;
+    justify-content: space-around;
+}
+
+.menu-item,
+.menu-item a,
+.menu-item button {
+    display: block;
+    background-color: transparent;
+    font-size: 1.1em;
+    border: none;
+    color: #fff;
+    padding: 0 10px 15px;
+    font-weight: 800;
+    border-bottom: 2px solid #ffffff00;
+}
+
+.menu-item a:hover,
+.menu-item button:hover {
+    border-bottom: 2px solid #ffffffe6;
+}
+
+.con-btn {
+    position: relative;
+}
+
+.con-btn::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: 15px;
+    width: 0%;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.5s ease-in;
+}
+
+.con-btn:hover::before {
+    width: 80%;
+}
+
+.header-content,
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    margin: 210px 0;
+}
+
+.header-content h1 {
+    text-align: center;
+    /* color: #00fff3; */
+    color: #fff;
+    font-size: 2.5em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
+.swipe-btn {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 900;
+    padding-bottom: 5px;
+    border: 2px solid #4378b9;
+    color: #4378b9;
+    background-color: #d4f9ff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.swipe-btn:hover {
+    background-color: #4378b9;
+    color: #fff;
+}
+
+.swipe-btn::before {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 100px;
+    background-color: #4378b9;
+    opacity: .8;
+    transform: scale(0);
+    border-radius: 100px;
+    left: -30px;
+    top: -30px;
+}
+
+.swipe-btn:hover:before {
+    animation: pulse 1s infinite;
+}
+/* Main-content of page */
+main {
+    margin: 0 0 60px;
+}
+
+main section {
+    padding: 85px 0 0;
+}
+
+.about h1,
+.skills h1,
+.examples h1 {
+    font-size: 2.3em;
+    font-family: 'Gardens';
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.29em;
+    color: #000;
+    margin: 0 0 70px;
+}
+
+.about article {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 45%);
+    row-gap: 60px;
+    column-gap: 60px;
+}
+
+.photo {
+    background: #fff url(./img/galery/photo_1.jpg) no-repeat 50% / cover;
+    margin: 5px;
+    width: 100%;
+    height: 600px;
+}
+
+.content {
+    padding: 30px 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h3,
+.benefits h3,
+.connect h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.2em;
+    font-family: 'Gardens';
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.23em;
+    color: #000;
+    margin: 0 0 20px;
+}
+
+.card {
+    margin: 0 auto;
+    background: #72727200;
+    padding: 25px;
+    /*
+    box-shadow: 0px 2px 1px -1px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+    */
+}
+
+.content .card {
+    width: 100%;
+    margin-top: 10%;
+    text-indent: 2ch;
+    text-align: justify;
+}
+
+.text {
+    font-size: 1.15em;
+    margin: 0;
+    line-height: 1.96em;
+    letter-spacing: 0.04em;
+}
+
+.text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.text span img {
+    width: 25px;
+    height: 25px;
+}
+
+.connect {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.connect ul {
+    padding: 0 20px;
+}
+
+.connect ul li {
+    margin: 15px 0;
+}
+
+.connect img {
+    margin: 0 15px 0;
+    height: 150px;
+    width: 150px;
+}
+
+.contact-link {
+    font-family: 'Gardens';
+    font-size: 1.4em;
+    text-transform: lowercase;
+    text-decoration: underline;
+    line-height: 1.2em;
+    letter-spacing: .16em;
+    color: #28a8db;
+}
+
+.skills article h3 {
+    margin: 0 0 35px;
+    font-size: 1.5em;
+    font-family: 'Gardens';
+    font-weight: 600;
+    text-transform: uppercase;
+    text-indent: 10px;
+    letter-spacing: 0.23em;
+    color: #000;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px 0 40px;
+}
+
+.skill {
+    width: 220px;
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.skill h4 {
+    font-size: 1.1em;
+    font-family: 'Gardens';
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.23em;
+}
+
+.skill-list__circle {
+    width: 49px;
+    height: 49px;
+    border: solid 1px #4378b9;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #fff, 0 0 0 6px #4378b9;
+    text-align: center;
+    line-height: 47px;
+    color: #4378b9;
+    font-size: 13px;
+    margin-right: 32px;
+}
+
+.skill-list__circle img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.fa-2x {
+    font-size: 2.3em;
+    line-height: 1.5em;
+    text-align: center;
+}
+/* Courusel */
+.slick-slider{
+    position: relative;
+    width: 100%;
+    margin: 30px auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    min-width: 0;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.slick-track{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 350px;
+}
+
+.slick-slide{
+    padding: 0 10px;
+    text-align: center;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+.courusel .slick-arrow {
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+}
+.courusel .slick-arrow.slick-prev,
+.courusel .slick-arrow.slick-next {
+    border-radius: 50%;
+    border-color: #25242400;
+    background-color: #25242400;
+    background-image: url(./img/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+}
+
+.courusel .slick-arrow.slick-prev {
+    min-width: 0;
+    left: -5.5%;
+    transform: rotate(180deg);
+}
+
+.courusel .slick-arrow.slick-next {
+    min-width: 0;
+    right: -5.5%;
+}
+/* Content of slide styles */
+.work {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.work__img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0000008f;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay .work__title {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.12em;
+    margin: 0 0 15px;
+}
+
+.overlay .work__link {
+    color: #fff;
+    font-size: 13px;
+    line-height: 2.5em;
+    border-bottom: .8px solid #e0e0e0;
+}
+/* Main button */
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border: 1.2px solid #28a8db;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.main-btn {
+    background-color: transparent;
+    color: #28a8db;
+    font-family: "Gardens";
+    font-size: 1.3em;
+    letter-spacing: .15em;
+    font-weight: 700;
+}
+
+.main-btn:hover {
+    background-color: #28a8db;
+    color: #fff;
+}
+/* footer */
+footer {
+    padding: 0 0 60px;
+    margin: 15px 0 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    border-top: 1px solid #c1c7c7;
+    padding: 30px 0 0;
+}
+
+.contacts,
+.copyright {
+    font-family: 'Gardens';
+    font-size: .8em;
+    font-weight: 300;
+
+}
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(0); opacity: .8 }
+    70% { opacity: 0 }
+    80% { transform: scale(1); opacity: 0 }
+    100% { transform: scale(1); opacity: 0 }
+}
