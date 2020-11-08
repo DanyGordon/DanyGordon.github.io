@@ -39,6 +39,11 @@ body {
   cursor: pointer;
   display: none;
   z-index: 999;
+  opacity: .4;
+}
+
+#uptotop:hover {
+  opacity: 1;
 }
 
 /* header */
