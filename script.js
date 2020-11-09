@@ -114,7 +114,7 @@
     window.onload = function() {
 		setTimeout(function() {
 			document.getElementById("preloader").style.display = "none";
-		}, 400);
+		}, 4000);
 	};
 
     carouselInit();
