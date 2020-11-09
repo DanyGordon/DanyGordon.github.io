@@ -46,6 +46,30 @@ body {
   opacity: 1;
 }
 
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .6);
+  z-index: 99
+}
+
+#preloader__img {
+  background: transparent url(./img/icons/preloader.gif) no-repeat 50% / cover;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 /* header */
 header {
     padding: 65px 0;
