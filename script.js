@@ -111,11 +111,11 @@
         }
     })
     
-    window.onload = function() {
+    /* window.onload = function() {
 		setTimeout(function() {
 			document.getElementById("preloader").style.display = "none";
 		}, 4000);
-	};
+	}; */
 
     carouselInit();
     buttonInit();
