@@ -57,7 +57,7 @@ body {
 }
 
 .preloader__img {
-  background: transparent url(./img/icons/preloader.gif) no-repeat 50% / cover;
+  background: transparent url(./img/icons/loader.gif) no-repeat 50% / cover;
   width: 100px;
   height: 100px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
