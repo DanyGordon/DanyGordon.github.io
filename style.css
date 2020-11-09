@@ -56,7 +56,7 @@ body {
   z-index: 99
 }
 
-#preloader__img {
+.preloader__img {
   background: transparent url(./img/icons/preloader.gif) no-repeat 50% / cover;
   width: 100px;
   height: 100px;
