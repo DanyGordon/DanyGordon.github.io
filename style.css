@@ -103,9 +103,9 @@ header nav {
     justify-content: space-around;
 }
 
-.menu-item,
-.menu-item a,
-.menu-item button {
+.menu__item,
+.menu__item a,
+.menu__item button {
     display: block;
     background-color: transparent;
     font-size: 1.1em;
@@ -116,8 +116,8 @@ header nav {
     border-bottom: 2px solid #ffffff00;
 }
 
-.menu-item a:hover,
-.menu-item button:hover {
+.menu__item a:hover,
+.menu__item button:hover {
     border-bottom: 2px solid #ffffffe6;
 }
 
@@ -142,17 +142,17 @@ header nav {
     width: 80%;
 }
 
-.header-content,
+.header__content,
 .btn-container {
     display: flex;
     justify-content: center;
 }
 
-.header-content {
+.header__content {
     margin: 210px 0;
 }
 
-.header-content h1 {
+.header__content h1 {
     text-align: center;
     /* color: #00fff3; */
     color: #fff;
@@ -226,7 +226,7 @@ main section {
     column-gap: 60px;
 }
 
-.photo {
+.about__photo {
     background: #fff url(./img/galery/photo_1.jpg) no-repeat 50% / cover;
     margin: 5px;
     width: 100%;
@@ -253,7 +253,7 @@ main section {
     margin: 0 0 20px;
 }
 
-.card {
+.content__card {
     margin: 0 auto;
     background: #72727200;
     padding: 25px;
@@ -262,7 +262,7 @@ main section {
     */
 }
 
-.content .card {
+.content .content__card {
     width: 100%;
     margin-top: 10%;
     text-indent: 2ch;
@@ -304,7 +304,7 @@ main section {
     width: 150px;
 }
 
-.contact-link {
+.connect__contact-link, contact-link {
     font-family: 'Gardens';
     font-size: 1.4em;
     text-transform: lowercase;
@@ -332,7 +332,7 @@ main section {
     margin: 25px 0 40px;
 }
 
-.skill {
+.skills-list__skill {
     width: 220px;
     padding-left: 7px;
     display: flex;
