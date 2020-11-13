@@ -339,7 +339,7 @@ main section {
     align-items: center;
 }
 
-.skill h4 {
+.skills-list__skill h4 {
     font-size: 1.1em;
     font-family: 'Gardens';
     font-weight: 600;
